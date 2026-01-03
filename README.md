@@ -107,11 +107,11 @@ Your system must use:
 
 ## Required Project Structure
 project_folder/
-├── models.py
-├── timelog.py
-├── manager.py
-├── gui_app.py
-├── app.py
+├── models.py <br>
+├── timelog.py <br>
+├── manager.py <br>
+├── gui_app.py <br>
+├── app.py <br>
 └── reports/ (optional)
 
 ## Sample Scenario
