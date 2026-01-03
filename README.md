@@ -106,7 +106,7 @@ Your system must use:
 - Modular design (separate `.py` files)  
 
 ## Required Project Structure
-project_folder/
+project_folder/ <br>
 ├── models.py <br>
 ├── timelog.py <br>
 ├── manager.py <br>
