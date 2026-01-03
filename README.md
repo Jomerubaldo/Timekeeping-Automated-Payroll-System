@@ -1,113 +1,112 @@
-# Timekeeping-Automated-Payroll-System
-FINAL PROJECT – PYTHON APPLICATION (FINALS) Timekeeping &amp; Automated Payroll System
+# Timekeeping and Automated Payroll System (Python)
 
+## Project Description
+You are required to design and develop a Python-based Timekeeping and Automated Payroll System related to your chosen business or store. The system allows employees to record their own Time In and Time Out, while automatically computing their working hours and salary (ETC – Estimated Time Compensation). This project integrates Object-Oriented Programming, GUI Development, File Handling, and Automation to simulate a real-world business system.
 
-PROJECT DESCRIPTION
-You are required to design and develop a Python-based Timekeeping and Automated Payroll System
-related to your own chosen business or store.
-Your system must allow employees to record their own Time In and Time Out, while the system
-automatically computes their working hours and salary (ETC – Estimated Time Compensation).
-This project integrates Object-Oriented Programming, GUI Development, File Handling, and
-Automation, simulating a real-world business system.
+## Choose Your Business Theme
+You must choose **ONE** business/store (or propose your own):
 
-CHOOSE YOUR BUSINESS THEME
-You must choose ONE business/store (or propose your own):
-Examples:
-• Small Grocery Store
-• Coffee Shop / Milk Tea Shop
-• Hardware Store
-• Restaurant / Canteen
-• Internet Café
-• Printing Shop
-• Pharmacy
-• Tailoring Shop
-• Beauty Salon / Barbershop
-• Repair Shop
-• Your family’s real business (allowed)
-The logic stays the same; only the business context changes.
+- Small Grocery Store  
+- Coffee Shop / Milk Tea Shop  
+- Hardware Store  
+- Restaurant / Canteen  
+- Internet Café  
+- Printing Shop  
+- Pharmacy  
+- Tailoring Shop  
+- Beauty Salon / Barbershop  
+- Repair Shop  
+- Family’s real business (allowed)  
 
-SYSTEM OBJECTIVES
+The system logic remains the same; only the business context changes.
+
+## System Objectives
 Your system must:
-✔Allow employees to log in using Employee ID + PIN
-✔Allow employees to Time In and Time Out on their own
-✔Automatically compute:
-• Hours Worked
-• Payroll (ETC = hours × rate)
-✔Separate Employee Mode and Admin Mode
-✔Generate Attendance and Payroll Reports
-✔Save reports to CSV files
+- Allow employees to log in using Employee ID and PIN  
+- Allow employees to Time In and Time Out on their own  
+- Automatically compute:
+  - Hours Worked  
+  - Payroll (ETC = hours × rate)  
+- Separate Employee Mode and Admin Mode  
+- Generate attendance and payroll reports  
+- Save reports to CSV files  
 
-REQUIRED FEATURES (STRICTLY REQUIRED)
-1. LOGIN SYSTEM
-• Employee Login:
-o Employee ID
-o PIN
-• Admin Login:
-o Admin PIN (or admin credentials)
+## Required Features (Strictly Required)
 
-2. EMPLOYEE MODE
+### 1. Login System
+**Employee Login**
+- Employee ID  
+- PIN  
+
+**Admin Login**
+- Admin PIN (or admin credentials)
+
+### 2. Employee Mode
 Employees must be able to:
-✔Time In
-✔Time Out
-✔View their own:
-• Hours worked
-• Salary (ETC)
-Employees must NOT see other employees’ data.
+- Time In  
+- Time Out  
+- View their own:
+  - Hours worked  
+  - Salary (ETC)  
 
-3. ADMIN MODE
+Employees must **NOT** see other employees’ data.
+
+### 3. Admin Mode
 Admin must be able to:
-✔Add employees
-✔Set hourly rate
-✔View employee list
-✔View reports:
-• Daily Attendance
-• Weekly Payroll Summary
-• Monthly Payroll Summary
-✔Export reports to CSV
+- Add employees  
+- Set hourly rate  
+- View employee list  
+- View reports:
+  - Daily Attendance  
+  - Weekly Payroll Summary  
+  - Monthly Payroll Summary  
+- Export reports to CSV  
 
-4. TIMEKEEPING LOGIC
+### 4. Timekeeping Logic
 The system must correctly compute:
-Hours Worked = Time Out – Time In
-ETC = Hours Worked × Hourly Rate
-✔Time Out must not work without Time In
-✔Proper error handling required
+- Hours Worked = Time Out – Time In  
+- ETC = Hours Worked × Hourly Rate  
 
-5. FILE HANDLING (CSV)
+Rules:
+- Time Out must not work without Time In  
+- Proper error handling is required  
+
+### 5. File Handling (CSV)
 Your system must generate:
-• daily_report.csv
-• weekly_report.csv
-• monthly_report.csv
+- daily_report.csv  
+- weekly_report.csv  
+- monthly_report.csv  
+
 Each file must contain:
-• Employee ID
-• Employee Name
-• Date
-• Time In
-• Time Out
-• Hours Worked
-• ETC
+- Employee ID  
+- Employee Name  
+- Date  
+- Time In  
+- Time Out  
+- Hours Worked  
+- ETC  
 
-6. GUI REQUIREMENT
-• Use Tkinter
-• Must be user-friendly
-• Buttons must be labeled clearly
-• Separate windows for:
-o Login
-o Employee Panel
-o Admin Panel
-o Reports
+### 6. GUI Requirement
+- Use Tkinter  
+- Must be user-friendly  
+- Buttons must be labeled clearly  
+- Separate windows for:
+  - Login  
+  - Employee Panel  
+  - Admin Panel  
+  - Reports  
 
-PROGRAMMING REQUIREMENTS
-Your system MUST USE:
-✔Classes & Objects
-✔At least one Custom Exception
-✔File I/O (CSV)
-✔Functions & Methods
-✔Iteration (for reports)
-✔Modular design (separate .py files)
+## Programming Requirements
+Your system must use:
+- Classes and Objects  
+- At least one Custom Exception  
+- File I/O (CSV)  
+- Functions and Methods  
+- Iteration (for reports)  
+- Modular design (separate `.py` files)  
 
-REQUIRED PROJECT STRUCTURE
+## Required Project Structure
 project_folder/
-│
 ├── models.py
 ├── timelog.py
 ├── manager.py
@@ -115,13 +114,17 @@ project_folder/
 ├── app.py
 └── reports/ (optional)
 
-SAMPLE SCENARIO (For Students)
-Business: Coffee Shop
-Employee: Juan Dela Cruz
-Rate: ₱60/hour
-• Time In: 8:00 AM
-• Time Out: 5:00 PM
-System Output:
-• Hours Worked: 9.00
-• ETC: ₱540.00
-Saved automatically to CSV.
+## Sample Scenario
+**Business:** Coffee Shop  
+**Employee:** Juan Dela Cruz  
+**Rate:** ₱60/hour  
+
+**Time Record**
+- Time In: 8:00 AM  
+- Time Out: 5:00 PM  
+
+**System Output**
+- Hours Worked: 9.00  
+- ETC: ₱540.00  
+
+Data is saved automatically to CSV.
