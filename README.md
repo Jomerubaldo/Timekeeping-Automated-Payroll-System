@@ -1,130 +1,73 @@
-# Timekeeping and Automated Payroll System (Python)
+SYSTEM FEATURES:
 
-## Project Description
-You are required to design and develop a Python-based Timekeeping and Automated Payroll System related to your chosen business or store. The system allows employees to record their own Time In and Time Out, while automatically computing their working hours and salary (ETC – Estimated Time Compensation). This project integrates Object-Oriented Programming, GUI Development, File Handling, and Automation to simulate a real-world business system.
+1. AUTHENTICATION SYSTEM
 
-## Choose Your Business Theme
-You must choose **ONE** business/store (or propose your own):
+Employee Login (ID + PIN)
+Admin Login (PIN only)
+Secure credential validation
+Error handling
 
-- Small Grocery Store  
-- Coffee Shop / Milk Tea Shop  
-- Hardware Store  
-- Restaurant / Canteen  
-- Internet Café  
-- Printing Shop  
-- Pharmacy  
-- Tailoring Shop  
-- Beauty Salon / Barbershop  
-- Repair Shop  
-- Family’s real business (allowed)  
 
-The system logic remains the same; only the business context changes.
+2. EMPLOYEE FEATURES
 
-## System Objectives
-Your system must:
-- Allow employees to log in using Employee ID and PIN  
-- Allow employees to Time In and Time Out on their own  
-- Automatically compute:
-  - Hours Worked  
-  - Payroll (ETC = hours × rate)  
-- Separate Employee Mode and Admin Mode  
-- Generate attendance and payroll reports  
-- Save reports to CSV files  
+Time In/Time Out - Record work hours
+Auto-Calculate - Hours worked & salary (ETC)
+Personal Dashboard - View status & hourly rate
+Privacy - Only see own data
+Logout Options - Stay or return to login after Time Out
 
-## Required Features (Strictly Required)
 
-### 1. Login System
-**Employee Login**
-- Employee ID  
-- PIN  
+ 3. ADMIN FEATURES
 
-**Admin Login**
-- Admin PIN (or admin credentials)
+Add Employees - Register new staff with ID, name, PIN, rate
+View Employee List - See all registered employees
+View Daily Report - Monitor real-time attendance
+Generate Reports - Weekly & Monthly CSV files
 
-### 2. Employee Mode
-Employees must be able to:
-- Time In  
-- Time Out  
-- View their own:
-  - Hours worked  
-  - Salary (ETC)  
 
-Employees must **NOT** see other employees’ data.
+4. AUTOMATED REPORTING (CSV FILES)
 
-### 3. Admin Mode
-Admin must be able to:
-- Add employees  
-- Set hourly rate  
-- View employee list  
-- View reports:
-  - Daily Attendance  
-  - Weekly Payroll Summary  
-  - Monthly Payroll Summary  
-- Export reports to CSV  
+Daily Report - Auto-saved after each Time Out
+Weekly Report - Last 7 days summary
+Monthly Report - 30-day totals per employee
 
-### 4. Timekeeping Logic
-The system must correctly compute:
-- Hours Worked = Time Out – Time In  
-- ETC = Hours Worked × Hourly Rate  
+Report Contents:
 
-Rules:
-- Time Out must not work without Time In  
-- Proper error handling is required  
+Employee ID, Name, Date, Time In/Out, Hours, Salary
 
-### 5. File Handling (CSV)
-Your system must generate:
-- daily_report.csv  
-- weekly_report.csv  
-- monthly_report.csv  
 
-Each file must contain:
-- Employee ID  
-- Employee Name  
-- Date  
-- Time In  
-- Time Out  
-- Hours Worked  
-- ETC  
+5. AUTOMATION
 
-### 6. GUI Requirement
-- Use Tkinter  
-- Must be user-friendly  
-- Buttons must be labeled clearly  
-- Separate windows for:
-  - Login  
-  - Employee Panel  
-  - Admin Panel  
-  - Reports  
+Auto-calculate hours & salary
+Auto-save to CSV files
+Auto-prevent errors (no Time Out without Time In)
+Session management
 
-## Programming Requirements
-Your system must use:
-- Classes and Objects  
-- At least one Custom Exception  
-- File I/O (CSV)  
-- Functions and Methods  
-- Iteration (for reports)  
-- Modular design (separate `.py` files)  
 
-## Required Project Structure
-project_folder/ <br>
-├── models.py <br>
-├── timelog.py <br>
-├── manager.py <br>
-├── gui_app.py <br>
-├── app.py <br>
-└── reports/ (optional)
+6. SECURITY & VALIDATION
 
-## Sample Scenario
-**Business:** Coffee Shop  
-**Employee:** Juan Dela Cruz  
-**Rate:** ₱60/hour  
+PIN authentication
+Prevent duplicate Time In/Out
+Input validation (empty fields, invalid data)
+Custom error messages
 
-**Time Record**
-- Time In: 8:00 AM  
-- Time Out: 5:00 PM  
 
-**System Output**
-- Hours Worked: 9.00  
-- ETC: ₱540.00  
+7. USER INTERFACE
 
-Data is saved automatically to CSV.
+Clean, professional design
+Multiple windows (Login, Employee Panel, Admin Panel)
+Easy navigation (Back/Logout buttons)
+Success/Error messages
+
+
+8. TECHNICAL FEATURES
+
+Object-Oriented Programming - Classes for Employee, Admin, TimeLog
+Modular Design - 5 separate Python files
+File Handling - CSV read/write operations
+Custom Exceptions - 3 error types
+
+
+9. WORKFLOW
+Employee: Login → Time In → Work → Time Out → View Summary → Logout
+Admin: Login → Add Employee → Monitor → Generate Reports → Logout
